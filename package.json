@@ -1,12 +1,31 @@
 {
-  "name": "instakilo",
+  "name": "@instakilo/common",
   "version": "1.0.0",
-  "description": "",
+  "description": "Common types / interfaces and functions",
   "main": "index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesPeterMcCarthy/instakilo-npm"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesPeterMcCarthy/instakilo-npm/issues"
+  },
+  "homepage": "https://github.com/CharlesPeterMcCarthy/instakilo-npm#readme",
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@types/googlemaps": "^3.38.0"
+  }
 }
