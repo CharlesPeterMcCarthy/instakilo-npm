@@ -1,6 +1,6 @@
 {
   "name": "@instakilo/common",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Common types / interfaces and functions",
   "main": "index.js",
   "types": "lib/index.d.ts",

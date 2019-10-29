@@ -6,11 +6,13 @@ export interface Post {
     location: Location;
     hashTags: string[];
     comments?: Comment[];
+    createdBy: UserBrief;
 }
 
 export interface Comment {
+    _id: string;
     text: string;
-    datetime?: Date;
+    datetime?: string;
     user?: UserBrief;
 }
 
