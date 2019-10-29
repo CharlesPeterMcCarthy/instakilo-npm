@@ -10,8 +10,8 @@ export interface Post {
 
 export interface Comment {
     text: string;
-    datetime: Date;
-    user: UserBrief;
+    datetime?: Date;
+    user?: UserBrief;
 }
 
 export interface Location {
