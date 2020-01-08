@@ -9,6 +9,10 @@ export interface Post {
     comments?: Comment[];
     createdBy?: UserBrief;
 }
+export interface PostBrief {
+    _id: string;
+    imgURL: string;
+}
 export interface Comment {
     _id: string;
     text: string;
