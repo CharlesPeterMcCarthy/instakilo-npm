@@ -48,4 +48,17 @@ export interface User extends UserBrief {
     posts?: Post[];
 }
 
+export interface UserProfile extends UserBrief {
+    firstName: string;
+    lastName: string;
+    times: {
+        signUpAt: Date;
+    }
+    dob: Date;
+}
+
+export interface MyUserProfile extends UserProfile {
+    email: string;
+}
+
 export type GooglePlace = google.maps.places.AutocompletePrediction;
