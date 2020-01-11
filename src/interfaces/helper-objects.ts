@@ -8,3 +8,9 @@ export interface LocationSearchResult {
     locationName: string;
     count: number;
 }
+
+export interface EditProfile {
+    firstName: string;
+    lastName: string;
+    dob: Date;
+}
