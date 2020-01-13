@@ -7,6 +7,7 @@ export interface Post {
     location: Location;
     hashTags: string[];
     comments?: Comment[];
+    commentCount?: number;
     createdBy?: UserBrief;
 }
 export interface PostBrief {

@@ -12,5 +12,5 @@ export interface LocationSearchResult {
 export interface EditProfile {
     firstName: string;
     lastName: string;
-    dob: Date;
+    dob: Date | string;
 }

@@ -6,6 +6,7 @@ export interface Post {
     location: Location;
     hashTags: string[];
     comments?: Comment[];
+    commentCount?: number;
     createdBy?: UserBrief;
 }
 
@@ -52,7 +53,7 @@ export interface UserProfile extends UserBrief {
     firstName: string;
     lastName: string;
     times: {
-        signUpAt: Date;
+        signedUpAt: Date;
     }
     dob: Date;
 }
