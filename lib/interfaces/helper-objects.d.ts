@@ -7,6 +7,15 @@ export interface LocationSearchResult {
     locationName: string;
     count: number;
 }
+export interface UserSearchResult {
+    userId: string;
+    username: string;
+    avatar: {
+        _id: string;
+        imageURL: string;
+    };
+    count: number;
+}
 export interface EditProfile {
     firstName: string;
     lastName: string;

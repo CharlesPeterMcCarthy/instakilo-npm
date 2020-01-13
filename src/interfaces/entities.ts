@@ -2,7 +2,9 @@ export interface Post {
     _id?: string;
     description: string;
     imageURL: string;
-    datetime?: Date;
+    times?: {
+        createdAt: string | Date;
+    };
     location: Location;
     hashTags: string[];
     comments?: Comment[];
@@ -12,7 +14,8 @@ export interface Post {
 
 export interface PostBrief {
     _id: string;
-    imgURL: string
+    imgURL?: string;
+    imageURL?: string;
 }
 
 export interface Comment {
@@ -53,9 +56,10 @@ export interface UserProfile extends UserBrief {
     firstName: string;
     lastName: string;
     times: {
-        signedUpAt: Date;
+        signedUpAt: Date | string;
     }
     dob: Date;
+    postsCount: number;
 }
 
 export interface MyUserProfile extends UserProfile {
